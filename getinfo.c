@@ -38,6 +38,7 @@ if (info->arg)
 		replace_vars(info);
 	}
 }
+}
 /**
  * free_info - frees info_t struct fields
  * @info: struct address
