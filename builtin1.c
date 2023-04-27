@@ -60,15 +60,13 @@ if (node)
 {
 	p = _strchr(node->str, '=');
 	for (a = node->str; a <= p; a++)
-	{
 		_putchar(*a);
-		_putchar('\'');
+		_putchar('\');
 		_puts(p + 1);
 		_puts("'\n");
 		return (0);
-	}
-	return (1);
 }
+return (1);
 }
 /**
  * _myalias - mimics the alias builtin (man alias)
