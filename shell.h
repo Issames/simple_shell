@@ -41,7 +41,7 @@ typedef struct liststr
 int num;
 char *str;
 struct liststr *next;
-}list_t;
+} list_t;
 /**
  * struct passinfo - contains pseudo-arguements to pass into a function,
  * allowing uniform prototype for function pointer struct
@@ -84,7 +84,7 @@ char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
 int cmd_buf_type; /* CMD_type ||, &&, ; */
 int readfd;
 int histcount;
-}info_t;
+} info_t;
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 		0, 0, 0}
@@ -98,7 +98,7 @@ typedef struct builtin
 {
 char *type;
 int (*func)(info_t *);
-}builtin_table;
+} builtin_table;
 /* toem_shloop.c */
 int hsh(info_t *, char **);
 int find_builtin(info_t *);
@@ -220,4 +220,3 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 #endif
-

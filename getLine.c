@@ -131,9 +131,11 @@ s += k - i;
 i = k;
 p = new_p;
 if (length)
+{
 	*length = s;
 	*ptr = p;
 	return (s);
+}
 }
 /**
  * sigintHandler - blocks ctrl-C

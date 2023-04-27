@@ -44,9 +44,9 @@ return (builtin_ret);
  * @info: the parameter & return info struct
  *
  * Return: -1 if builtin not found,
- * 	0 if builtin executed successfully,
- * 	1 if builtin found but not successful,
- * 	2 if builtin signals exit()
+ *	0 if builtin executed successfully,
+ *	1 if builtin found but not successful,
+ *	2 if builtin signals exit()
  */
 int find_builtin(info_t *info)
 {
@@ -122,7 +122,7 @@ if (child_pid == -1)
 {
 	/* TODO: PUT ERROR FUNCTION */
 	perror("Error:");
-	return;
+	return(0);
 }
 if (child_pid == 0)
 {
